@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: 1.5.23
+  version: "1.5.24"
 
 package:
   name: python-blockbuster
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/b/blockbuster/blockbuster-${{ version }}.tar.gz
-  sha256: ede6302307e700a60518c99caccfea159485382648e0158131e3506d4ff7b49c
+  sha256: 97645775761a5d425666ec0bc99629b65c7eccdc2f770d2439850682567af4ec
 
 build:
   number: 0
