@@ -10,9 +10,9 @@ source:
 
 build:
   number: 0
-  noarch: python
+  skip: True  # [py<38]
   script:
-    - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
+    - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
