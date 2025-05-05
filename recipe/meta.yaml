@@ -40,10 +40,17 @@ test:
     - coverage report --show-missing --skip-covered --fail-under=89
 
 about:
-  homepage: https://github.com/cbornet/blockbuster
+  home: https://github.com/cbornet/blockbuster
   license: Apache-2.0
   license_file: LICENSE
+  license_family: Apache
   summary: Utility to detect blocking calls in the async event loop
+  description: |
+    Blockbuster is a Python package designed to detect and prevent blocking calls within an asynchronous event loop.
+    It is particularly useful when executing tests to ensure that your asynchronous code does not inadvertently call blocking operations,
+    which can lead to performance bottlenecks and unpredictable behavior.
+  dev_url: https://github.com/cbornet/blockbuster
+  doc_url: https://github.com/cbornet/blockbuster
 
 extra:
   recipe-maintainers:
