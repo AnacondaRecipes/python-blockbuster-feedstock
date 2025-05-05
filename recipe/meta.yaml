@@ -1,5 +1,4 @@
 {% set version = "1.5.24" %}
-{% set python_min = "3.8" %}
 
 package:
   name: python-blockbuster
@@ -19,10 +18,10 @@ requirements:
   host:
     - hatchling
     - pip
-    - python {{ python_min }}.*
+    - python
   run:
     - forbiddenfruit >=0.1.4
-    - python >={{ python_min }}
+    - python
 
 test:
   source_files:
@@ -34,7 +33,6 @@ test:
     - pip
     - pytest-asyncio
     - pytest-cov
-    - python {{ python_min }}.*
     - requests
   commands:
     - pip check
